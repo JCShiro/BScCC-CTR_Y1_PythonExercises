@@ -1,12 +1,15 @@
-# Transposition Challenge
-# Create a new matrix called `matrix_b` that is the transpose of `matrix_a`.
-# Print `matrix_b` to see the changes.
-matrix_b
+# Challenge One: Transpose
+# Create a matrix with name `matrix` of the form:
+# 1 2 3 4
+# 5 6 7 8
+# Create a new empty matrix called `m_transpose`.
+# Using a for loop, populate `m_transpose` so that it is the transpose of `matrix`.
+# Print `m_transpose` to see the changes.
 
-# Exercise Four 
-# Create a new matrix called `matrix_c` that is the result of adding `matrix_a` and `matrix_b` together.
-# Print `matrix_c` to see the result.
-
-# Exercise Five
-# Create a function called `multiply_matrices` that takes two matrices as arguments and returns their product.
-# Call the `multiply_matrices` function with `matrix_a` and `matrix_b` and print the result to see the output.
+# Challenge Two: Matrix Multiplication
+# Create a matrix called `multiplied` that is the result of multiplying `matrix` and `m_transpose`.
+# To do so, you may follow the steps:
+# Step One: Identify resulting matrix rows & columns
+# -- these two numbers will be the same and will equal to the rows of the first matrix and the columns of the second matrix
+# Step Two: Create a new `multiplied` empty matrix
+# Step Three: Using for loops, populate the `multiplied` matrix

@@ -12,3 +12,12 @@
 # Exercise Three
 # Print the number of rows and columns in `matrix_a`.
 # Hint: Use what you learnt in the arrays section to figure it out!
+
+# Exercise Four
+# Create a matrix called `matrix_b` that contains the following values:
+# 4  3  2  1
+# 8  7  6  5
+# 12 11 10 9
+# Create a new matrix called `matrix_c` that is the result of adding `matrix_a` and `matrix_b` together.
+# i.e., each cell of `matrix_c` should contain the added values in that cell for `matrix_a` and `matrix_b`
+# Print `matrix_c` to see the result.

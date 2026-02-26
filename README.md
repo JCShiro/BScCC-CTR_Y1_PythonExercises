@@ -35,13 +35,13 @@ python 00_basics.py
 In basics we learn how to print and assign different values to python variables.
 Key similarities and differences with JavaScript are listed here:
 
-| Action | JavaScript Command | Python Command |
-| ---- | ----- | ----- |
-| print / display | `console.log()` | `print()` |
-| create a variable | `let x = <value>` | `x = <value>` |
-| string value | `"string"` or `'string'` | `"string"` or `'string'` |
-| number value | `<number>` | `<number>` |
-| boolean value | `true` / `false` | `True` / `False` |
+| Action                          | JavaScript Command        | Python Command                 |
+| ------------------------------- | ------------------------- | ------------------------------ |
+| print / display                 | `console.log()`           | `print()`                      |
+| create a variable               | `let x = <value>`         | `x = <value>`                  |
+| string value                    | `"string"` or `'string'`  | `"string"` or `'string'`       |
+| number value                    | `<number>`                | `<number>`                     |
+| boolean value                   | `true` / `false`          | `True` / `False`               |
 | concatenate strings and numbers | `"This is a number:" + 1` | `"This is a number:" + str(1)` |
 
 ## 01_variables_and_functions
@@ -93,10 +93,10 @@ In Conditionals and Loops we learn the basics of these techniques.
 
 An if / else statement in JS looks like this:
 
-```JS
+```javascript
 if(something_is_true) {
     console.log("true!");
-} 
+}
 else {
     console.log("false!");
 }
@@ -164,16 +164,16 @@ In the Arrays exercises you will learn how to implement arrays, add and remove e
 
 Here's a list of key differences and similarities between JS and Python arrays.
 
-| Action | JavaScript Command | Python Command |
-| ---- | ----- | ----- |
-| create array | `let array = [1, 2, 3]` | `array = [1, 2, 3]` |
-| length of array | `array.length` | `len(array)` |
-| add element at end | `array.push(<elem>)` | `array.append(<elem>)` |
-| remove last element of array | `array.pop()` | `array.pop()` |
-| remove first (position 0) element of array | `array.shift()` | `array.pop(0)` |
-| remove element at position n of the array | `array.splice(n,1)` | `array.pop(n)` |
-| concatenate two arrays | `newArray = arrayOne.concat(arrayTwo)` | `new_array = array_one + array_two` |
-| simple loop through array | `for(let elem of array) {...}` | `for elem in array :` |
+| Action                                     | JavaScript Command                     | Python Command                      |
+| ------------------------------------------ | -------------------------------------- | ----------------------------------- |
+| create array                               | `let array = [1, 2, 3]`                | `array = [1, 2, 3]`                 |
+| length of array                            | `array.length`                         | `len(array)`                        |
+| add element at end                         | `array.push(<elem>)`                   | `array.append(<elem>)`              |
+| remove last element of array               | `array.pop()`                          | `array.pop()`                       |
+| remove first (position 0) element of array | `array.shift()`                        | `array.pop(0)`                      |
+| remove element at position n of the array  | `array.splice(n,1)`                    | `array.pop(n)`                      |
+| concatenate two arrays                     | `newArray = arrayOne.concat(arrayTwo)` | `new_array = array_one + array_two` |
+| simple loop through array                  | `for(let elem of array) {...}`         | `for elem in array :`               |
 
 ## 04_matrixes
 
@@ -195,6 +195,90 @@ You can then access a value of the matrix just like you'd access a value in an a
 value = matrix[0][0]
 ```
 
-At the end of the matrixes, you have some challenge exercises to practice some concepts that will be relevant to Machine Learning. You are encouraged to attempt them at your own pace!
+## 05_challenges
+
+You have some challenge exercises to practice some concepts that will be relevant to Machine Learning. You are encouraged to attempt them at your own pace!
 
 ### Transposition
+
+**Transposing** a matrix means flipping it over its main diagonal — turning its rows into columns and its columns into rows. If a matrix **A** has dimensions _m × n_, its transpose **Aᵀ** has dimensions _n × m_.
+
+**Example:**
+
+**Original matrix A (2 × 3):**
+
+|     | C1  | C2  | C3  |
+| --- | --- | --- | --- |
+| R1  | 1   | 2   | 3   |
+| R2  | 4   | 5   | 6   |
+
+**Transposed matrix Aᵀ (3 × 2):**
+
+|     | C1  | C2  |
+| --- | --- | --- |
+| R1  | 1   | 4   |
+| R2  | 2   | 5   |
+| R3  | 3   | 6   |
+
+---
+
+The **key rule** is that the element at position **(i, j)** in the original matrix moves to position **(j, i)** in the transposed matrix:
+
+```a
+A[i][j] → Aᵀ[j][i]
+```
+
+### Multiplication
+
+**Matrix multiplication** combines two matrices to produce a third. For matrices **A** (_m × n_) and **B** (_n × p_), the result **C = A × B** has dimensions _m × p_.
+
+> **Key requirement:** The number of **columns in A** must equal the number of **rows in B**.
+
+Each element of C is computed by taking the **dot product** of a row from A and a column from B:
+
+```a
+C[i][j] = sum of A[i][k] * B[k][j]  for k = 1 to n
+```
+
+---
+
+## Example
+
+**Matrix A (2 × 3):**
+
+|     | C1  | C2  | C3  |
+| --- | --- | --- | --- |
+| R1  | 1   | 2   | 3   |
+| R2  | 4   | 5   | 6   |
+
+**Matrix B (3 × 2):**
+
+|     | C1  | C2  |
+| --- | --- | --- |
+| R1  | 7   | 8   |
+| R2  | 9   | 10  |
+| R3  | 11  | 12  |
+
+**Result C = A × B (2 × 2):**
+
+| Element | Calculation             | Value   |
+| ------- | ----------------------- | ------- |
+| C\[1\]\[1\] | (1×7) + (2×9) + (3×11)  | **58**  |
+| C\[1\]\[2\] | (1×8) + (2×10) + (3×12) | **64**  |
+| C\[2\]\[1\] | (4×7) + (5×9) + (6×11)  | **139** |
+| C\[2\]\[2\] | (4×8) + (5×10) + (6×12) | **154** |
+
+**Matrix C:**
+
+|     | C1  | C2  |
+| --- | --- | --- |
+| R1  | 58  | 64  |
+| R2  | 139 | 154 |
+
+---
+
+Some Key properties of Matrix Multiplication are:
+
+- **Not commutative:** A × B ≠ B × A (in general)
+- **Associative:** (A × B) × C = A × (B × C)
+- **Distributive:** A × (B + C) = A×B + A×C
