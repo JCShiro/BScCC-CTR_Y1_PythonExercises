@@ -115,7 +115,7 @@ As you can see, Python also uses a colon and indentation to differenciate the sc
 
 Moreover, if statements in Python loose the brackets typically surrounding the condition.
 
-### Conditionals (Ex 4 - )
+### Loops (Ex 4 - 5)
 
 As expected, loops also use colons and indentation to separate scopes. This is how a while loop compares in each coding language:
 
