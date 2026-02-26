@@ -156,3 +156,20 @@ for i in range(100) {
     print(i)
 }
 ```
+
+## 03_arrays
+
+In the Arrays exercises you will learn how to implement arrays, add and remove elements from arrays, as well as concatenate arrays. You will also learn how to loop through arrays.
+
+Here's a list of key differences and similarities between JS and Python arrays.
+
+| Action | JavaScript Command | Python Command |
+| ---- | ----- | ----- |
+| create array | `let array = [1, 2, 3]` | `array = [1, 2, 3]` |
+| length of array | `array.length` | `len(array)` |
+| add element at end | `array.push(<elem>)` | `array.append(<elem>)` |
+| remove last element of array | `array.pop()` | `array.pop()` |
+| remove first (position 0) element of array | `array.shift()` | `array.pop(0)` |
+| remove element at position n of the array | `array.splice(n,1)` | `array.pop(n)` |
+| concatenate two arrays | `newArray = arrayOne.concat(arrayTwo)` | `new_array = array_one + array_two` |
+| simple loop through array | `for(let elem of array) {...}` | `for elem in array :` |

@@ -9,19 +9,26 @@
 # Print the `fruits` array to see the changes.
 
 # Exercise Four
+# Remove the last element from the `fruits` array.
+# Print the `fruits` array to see the changes.
+
+# Exercise Five
 # Remove the first element from the `fruits` array.
 # Print the `fruits` array to see the changes.
 
-# Exercise Five 
+# Exercise Six
+# Modify the code form Exercise Five to remove the second element from the `fruits` array instead.
+
+# Exercise Seven
 # Create a new array called `more_fruits` that contains the following strings: "grape", "melon".
 # Combine the `fruits` and `more_fruits` arrays into a new array called `all_fruits`.
 # Print the `all_fruits` array to see the combined list of fruits.
 
-# Exercise Six
-# Create a function called `print_fruits` that takes an array of fruits as an argument and prints each fruit on a new line.
-# Call the `print_fruits` function with the `all_fruits` array to see the output.
-
-# Exercise Seven
+# Exercise Eight
 # Create a function called `add_fruit` that takes an array of fruits as an argument and a string representing a new fruit.
 # The function should add the new fruit to the array and return the updated array.
 # Call the `add_fruit` function with the `all_fruits` array and a new fruit, then print the result.
+
+# Exercise Nine
+# Create a function called `print_fruits` that takes an array of fruits as an argument and prints each fruit on a new line.
+# Call the `print_fruits` function with the `all_fruits` array to see the output.
