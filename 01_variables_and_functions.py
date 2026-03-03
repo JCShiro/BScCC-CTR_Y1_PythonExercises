@@ -16,6 +16,6 @@
 # Create a variable sum and assign it the result of adding x and y together.
 # Print the value of sum to see the result.
 
-# Exercise Three
+# Exercise Five
 # Create a function called `add_numbers` that takes two numbers as arguments and returns their sum.
 # Call the `add_numbers` function with two numbers and print the result to see the output.
