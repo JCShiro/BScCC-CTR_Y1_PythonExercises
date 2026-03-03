@@ -73,7 +73,7 @@ As you can see, the key differences are:
 - Instead of the curly bracket system, Python uses indentation to mark different scopes. This means that the following code would be wrong, and the `do_something`function would be detected as blank:
 
 ```Python
-def do_something:
+def do_something():
 something = "something"
 ```
 

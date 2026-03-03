@@ -25,7 +25,8 @@ y = 5
 sum = x + y
 # Print the value of sum to see the result.
 print(sum)
-# Exercise Three
+
+# Exercise Five
 # Create a function called `add_numbers` that takes two numbers as arguments and returns their sum.
 def add_numbers():
     print(5 + 17)
