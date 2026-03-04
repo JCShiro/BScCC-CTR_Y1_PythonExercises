@@ -43,10 +43,18 @@ print(all_fruits)
 # Exercise Eight
 # Create a function called `add_fruit` that takes an array of fruits as an argument and a string representing a new fruit.
 def add_fruit(fruits):
-    
+    every_fruit = all_fruits + fruits
+    print(every_fruit)
 # The function should add the new fruit to the array and return the updated array.
 # Call the `add_fruit` function with the `all_fruits` array and a new fruit, then print the result.
+add_fruit(["orange", "watermelon", "pineapple"])
 
 # Exercise Nine
 # Create a function called `print_fruits` that takes an array of fruits as an argument and prints each fruit on a new line.
+def print_fruits(fruits):
+    i = 0
+    for elem in fruits :
+        print(fruits[i])
+        i += 1
 # Call the `print_fruits` function with the `all_fruits` array to see the output.
+print_fruits(all_fruits)
